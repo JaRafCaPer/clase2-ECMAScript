@@ -26,7 +26,20 @@ class ProductManager {
       };
       this.products.push(product);
     }
-  
+    
+     //Metodo para verificar que el code no este duplicado
+     codeDuplicado(code) {
+      for (const product of this.products) {
+        if (product.code === code) {
+          return false;
+        }
+      }
+      return true;
+    }
+    //Metodo para asegurarse que no ingresen productos con campos vacios
+    camposVacios(...fields) {
+      return fields.some(field => !field);
+    }
     getProducts() {
       return this.products;
     }
@@ -39,19 +52,7 @@ class ProductManager {
       }
       console.log("Not found: Producto no existe");
     }
-    //Metodo para verificar que el code no este duplicado
-    codeDuplicado(code) {
-      for (const product of this.products) {
-        if (product.code === code) {
-          return false;
-        }
-      }
-      return true;
-    }
-    //Metodo para asegurarse que no ingresen productos con campos vacios
-    camposVacios(...fields) {
-      return fields.some(field => !field);
-    }
+   
   }
   
 
