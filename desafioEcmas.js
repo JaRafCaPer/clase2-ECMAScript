@@ -68,8 +68,8 @@ manager.addProduct("Producto 5", "Descripción del producto", 12.99, "imagen5.jp
 manager.addProduct("Producto 6", "Descripción del producto", 1.99, "imagen6.jpg", "P6", 16);
 manager.addProduct("Producto 7 ", "Descripción del producto", 18.99, "imagen7.jpg", "P7", 19);
 manager.addProduct("Producto 8", "Descripción del producto", 11.99, "imagen8.jpg", "P8", 9);
-manager.addProduct("Producto 9", "Descripción del producto", 122.99, "imagen8.jpg", 99);
-manager.addProduct("Producto 10", "Descripción del producto", 110.99, "imagen8.jpg","P8", 99);
+manager.addProduct("Producto 9", "Descripción del producto", 122.99, "imagen9.jpg", 99);
+manager.addProduct("Producto 10", "Descripción del producto", 110.99, "imagen10.jpg","P8", 99);
 
 
 const products = manager.getProducts();
